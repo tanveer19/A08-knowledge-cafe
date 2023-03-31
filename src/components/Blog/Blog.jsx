@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 import "./Blog.css";
+
+const [blog, setBlog] = useState([]);
+
+useEffect(() => {
+  fetch("blogs.json")
+    .then((res) => res.json())
+    .then((data) => console.log(data));
+});
 
 const Blog = () => {
   return (

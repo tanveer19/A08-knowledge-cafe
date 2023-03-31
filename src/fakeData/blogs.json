@@ -1,0 +1,30 @@
+[
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+    "author-image": "https://picsum.photos/id/16/80",
+    "author-name": "raju",
+    "blog-title": "How to get your first job as a self-taught programmer",
+    "img": "https://picsum.photos/id/1/845/450"
+  },
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a77b362d6bcd",
+    "author-image": "https://picsum.photos/id/2/80",
+    "author-name": "raju",
+    "blog-title": "How to get your first job as a self-taught programmer",
+    "img": "https://picsum.photos/id/2/845/450"
+  },
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a77b362d6efg",
+    "author-image": "https://picsum.photos/id/3/80",
+    "author-name": "raju",
+    "blog-title": "How to get your first job as a self-taught programmer",
+    "img": "https://picsum.photos/id/3/845/450"
+  },
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a77b362d6hij",
+    "author-image": "https://picsum.photos/id/4/80",
+    "author-name": "raju",
+    "blog-title": "How to get your first job as a self-taught programmer",
+    "img": "https://picsum.photos/id/4/845/450"
+  }
+]
