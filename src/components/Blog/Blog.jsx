@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 import "./Blog.css";
 
 const Blog = () => {
@@ -24,7 +26,10 @@ const Blog = () => {
             <p>Mark as read</p>
           </div>
           <div>
-            <p>05 min read </p>
+            <p>
+              05 min read
+              <FontAwesomeIcon icon={faBookmark} />
+            </p>
           </div>
         </div>
         <hr />

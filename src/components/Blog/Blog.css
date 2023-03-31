@@ -6,8 +6,12 @@ img {
   max-width: 845px;
 }
 .blog-text {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
+}
+.blog-text img {
+  border-radius: 50px;
 }
 .blog-details {
   text-align: left;
