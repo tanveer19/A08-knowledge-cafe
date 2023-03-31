@@ -1,0 +1,17 @@
+.section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+img {
+  max-width: 845px;
+}
+.blog-text {
+  display: flex;
+  justify-content: space-between;
+}
+.blog-details {
+  text-align: left;
+}
+.blog-writer {
+  display: flex;
+}
