@@ -3,15 +3,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 import "./Blog.css";
 
-const [blog, setBlog] = useState([]);
-
-useEffect(() => {
-  fetch("blogs.json")
-    .then((res) => res.json())
-    .then((data) => console.log(data));
-});
+// const [blog, setBlog] = useState([]);
 
 const Blog = () => {
+  useEffect(() => {
+    fetch("blogs.json")
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  }, []);
+
   return (
     <div className="section">
       <div className="blog">
