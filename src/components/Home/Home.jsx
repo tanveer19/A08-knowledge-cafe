@@ -5,7 +5,7 @@ import "./Home.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import SingleCard from "../SingleCard/SingleCard";
 
-const Home = ({ handleWatchTime }) => {
+const Home = ({ handleReadTime }) => {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     fetch("blogs.json")
@@ -17,10 +17,7 @@ const Home = ({ handleWatchTime }) => {
     <div>
       <div className="blog-container">
         {blogs.map((blog) => (
-          <SingleCard
-            handleWatchTime={handleWatchTime}
-            blog={blog}
-          ></SingleCard>
+          <SingleCard handleReadTime={handleReadTime} blog={blog}></SingleCard>
         ))}
       </div>
     </div>

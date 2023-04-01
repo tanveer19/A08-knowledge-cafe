@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-const SideCart = () => {
+const SideCart = ({ readTime }) => {
+  const [time, setTime] = useState(readTime);
+
+  useEffect(() => {
+    const getReadTime = localStorage.getItem("readTime");
+    setTime(getReadTime);
+  }, [readTime]);
+
   return (
     <div>
-      <p>cart</p>
+      <p>Spent time on read:{time} </p>
     </div>
   );
 };

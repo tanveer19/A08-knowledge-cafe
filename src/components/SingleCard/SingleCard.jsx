@@ -1,6 +1,6 @@
 import React from "react";
 
-const SingleCard = ({ blog, handleWatchTime }) => {
+const SingleCard = ({ blog, handleReadTime }) => {
   //   console.log(blog);
   return (
     <div className="blog-card card ">
@@ -14,7 +14,7 @@ const SingleCard = ({ blog, handleWatchTime }) => {
           <button className="btn">Mark as read</button>
         </div>
         <div>
-          <button onClick={() => handleWatchTime(blog.readTime)}>
+          <button onClick={() => handleReadTime(blog.readTime)}>
             {blog.readTime} Min read
           </button>
         </div>
