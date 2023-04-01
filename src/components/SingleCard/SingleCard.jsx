@@ -4,7 +4,7 @@ const SingleCard = ({ blog, handleReadTime }) => {
   //   console.log(blog);
   return (
     <div className="blog-card card ">
-      <img src={blog.img} alt="" />
+      <img className="mb-3" src={blog.img} alt="" />
       <div className="d-flex">
         <div className="d-flex flex-column align-items-start">
           <img src={blog.authorImage} alt="" />
