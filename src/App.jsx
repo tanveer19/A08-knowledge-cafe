@@ -3,6 +3,8 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import SideCart from "./components/SideCart/SideCart";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [readTime, setReadTime] = useState("");
@@ -28,6 +30,7 @@ function App() {
         </div>
         <div className="sideCart col-md-4 card">
           <SideCart readTime={readTime}></SideCart>
+          <ToastContainer></ToastContainer>
         </div>
       </div>
     </div>
