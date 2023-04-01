@@ -5,6 +5,7 @@ import Home from "./components/Home/Home";
 import SideCart from "./components/SideCart/SideCart";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Blog from "./components/Blog/Blog";
 
 function App() {
   const [readTime, setReadTime] = useState("");
@@ -27,8 +28,9 @@ function App() {
       <div className="main row">
         <div className="home-container col-md-8">
           <Home handleReadTime={handleReadTime}></Home>
+          <Blog></Blog>
         </div>
-        <div className="sideCart col-md-4 card">
+        <div className="sideCart col-md-4 col-sm-12 card">
           <SideCart readTime={readTime}></SideCart>
           <ToastContainer></ToastContainer>
         </div>
