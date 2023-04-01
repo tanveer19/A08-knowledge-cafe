@@ -15,17 +15,12 @@ const SingleCard = ({ blog, handleWatchTime }) => {
         </div>
         <div>
           <button onClick={() => handleWatchTime(blog.readTime)}>
-            {" "}
-            Min read
+            {blog.readTime} Min read
           </button>
         </div>
       </div>
     </div>
   );
 };
-{
-  /* <img src={blog.img} alt="" />
-<p>name: {blog.authorName}</p>
-<p>name: {blog.blogTitle}</p> */
-}
+
 export default SingleCard;
