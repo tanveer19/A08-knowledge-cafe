@@ -3,6 +3,7 @@
     "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
     "authorName": "alpha",
     "blogTitle": "How to get your first job as a self-taught programmer",
+    "readTime": "05",
     "authorImage": "https://picsum.photos/id/1/80",
     "img": "https://picsum.photos/id/1/845/450"
   },
@@ -10,6 +11,7 @@
     "id": "124e13b9-2d54-4b2f-a74d-a77b362d6bcd",
     "authorName": "beta",
     "blogTitle": "How to get your first job as a self-taught programmer",
+    "readTime": "10",
     "authorImage": "https://picsum.photos/id/2/80",
     "img": "https://picsum.photos/id/2/845/450"
   },
@@ -17,6 +19,7 @@
     "id": "124e13b9-2d54-4b2f-a74d-a77b362d6efg",
     "authorName": "omega",
     "blogTitle": "How to get your first job as a self-taught programmer",
+    "readTime": "15",
     "authorImage": "https://picsum.photos/id/3/80",
     "img": "https://picsum.photos/id/3/845/450"
   },
@@ -24,6 +27,7 @@
     "id": "124e13b9-2d54-4b2f-a74d-a77b362d6hij",
     "authorName": "epsilon",
     "blogTitle": "How to get your first job as a self-taught programmer",
+    "readTime": "20",
     "authorImage": "https://picsum.photos/id/4/80",
     "img": "https://picsum.photos/id/4/845/450"
   }

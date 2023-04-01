@@ -4,6 +4,9 @@ import Home from "./components/Home/Home";
 import SideCart from "./components/SideCart/SideCart";
 
 function App() {
+  const handWatchTime = (time) => {
+    console.log(time);
+  };
   return (
     <div>
       <div className="header m-auto mb-3">
@@ -11,7 +14,7 @@ function App() {
       </div>
       <div className="main row">
         <div className="home-container col-md-8">
-          <Home></Home>
+          <Home handWatchTime={handWatchTime}></Home>
         </div>
         <div className="sideCart col-md-4 card">
           <SideCart></SideCart>

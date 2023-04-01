@@ -1,7 +1,7 @@
 import React from "react";
 
-const SingleCard = ({ blog }) => {
-  console.log(blog);
+const SingleCard = ({ blog, handleWatchTime }) => {
+  //   console.log(blog);
   return (
     <div className="blog-card card ">
       <img src={blog.img} alt="" />
@@ -11,10 +11,13 @@ const SingleCard = ({ blog }) => {
           <h4> Mr. {blog.authorName}</h4>
           <h2 className="m-0">{blog.blogTitle}</h2>
           <p>#beginners #programming</p>
-          <button>Mark as read</button>
+          <button className="btn">Mark as read</button>
         </div>
         <div>
-          <button>05 Min read</button>
+          <button onClick={() => handleWatchTime(blog.readTime)}>
+            {" "}
+            Min read
+          </button>
         </div>
       </div>
     </div>
