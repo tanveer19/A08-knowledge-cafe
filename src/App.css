@@ -9,7 +9,16 @@
   padding: 2em;
 } */
 
+/* singlecard component */
 .mark-as-read {
   color: #6047ec;
-  /* text-decoration: underline; */
+  text-decoration: underline;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  border: 0;
+  background-color: white;
+}
+.bookmark-btn {
+  border: 0;
+  background-color: white;
 }

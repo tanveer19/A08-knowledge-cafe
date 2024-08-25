@@ -15,9 +15,9 @@ const SideCart = ({ readTime }) => {
   return (
     <div>
       <p>Spent time on read:{time} </p>
-      <button onClick={handleComplete} className="btn btn-info">
+      {/* <button onClick={handleComplete} className="btn btn-info">
         Toast me
-      </button>
+      </button> */}
     </div>
   );
 };
