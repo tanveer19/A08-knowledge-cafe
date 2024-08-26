@@ -21,7 +21,7 @@ const SingleCard = ({ blog, handleReadTime, handleAddToBookmarks }) => {
           </button>
         </div>
         {/* bookmark btn */}
-        <div className="d-flex align-items-start col-3 ms-5">
+        <div className="d-flex align-items-start col-3">
           <div>{blog.readTime} Min read</div>
           <button
             onClick={() => handleAddToBookmarks(blog)}

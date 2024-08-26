@@ -3,8 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import SingleCard from "../SingleCard/SingleCard";
 import { addToLS, getStoredBookmarks } from "../../utilities/localstorage";
 import Bookmark from "../Bookmark/Bookmark";
+import SideCart from "../SideCart/SideCart";
 
-const Home = ({ handleReadTime }) => {
+const Home = ({}) => {
   const [blogs, setBlogs] = useState([]);
   const [bookmarks, setBookmarks] = useState([]);
 
@@ -40,10 +41,24 @@ const Home = ({ handleReadTime }) => {
     addToLS(blog.id);
   };
 
+  // readtime
+  const [readTime, setReadTime] = useState("");
+  const handleReadTime = (time) => {
+    const previousReadTime = JSON.parse(localStorage.getItem("readTime"));
+    if (previousReadTime) {
+      const sum = previousReadTime + time;
+      localStorage.setItem("readTime", sum);
+      setReadTime(sum);
+    } else {
+      localStorage.setItem("readTime", time);
+      setReadTime(time);
+    }
+  };
+
   return (
-    <div>
-      <Bookmark bookmarks={bookmarks}></Bookmark>
-      <div className="blog-container">
+    <div className="row">
+      {/* blog section */}
+      <div className="col-md-8">
         {blogs.map((blog) => (
           <SingleCard
             key={blog.id}
@@ -52,6 +67,11 @@ const Home = ({ handleReadTime }) => {
             blog={blog}
           ></SingleCard>
         ))}
+      </div>
+      {/* side panel */}
+      <div className="col-md-4">
+        <SideCart readTime={readTime}></SideCart>
+        <Bookmark bookmarks={bookmarks}></Bookmark>
       </div>
     </div>
   );

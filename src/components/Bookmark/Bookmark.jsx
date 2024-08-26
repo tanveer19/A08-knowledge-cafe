@@ -1,10 +1,10 @@
 import React from "react";
 
 const Bookmark = ({ bookmarks }) => {
-  console.log(bookmarks);
+  // console.log(bookmarks);
   return (
     <div className="">
-      {bookmarks.length}
+      <h3>Bookmarked Blogs:{bookmarks.length}</h3>
       <div className="bookmark-container">
         {bookmarks.map((bookmark) => (
           <div key={bookmark.id}>

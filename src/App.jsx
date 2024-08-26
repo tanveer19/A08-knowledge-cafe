@@ -8,31 +8,17 @@ import SideCart from "./components/SideCart/SideCart";
 import Blog from "./components/Blog/Blog";
 
 function App() {
-  const [readTime, setReadTime] = useState("");
-  const handleReadTime = (time) => {
-    const previousReadTime = JSON.parse(localStorage.getItem("readTime"));
-    if (previousReadTime) {
-      const sum = previousReadTime + time;
-      localStorage.setItem("readTime", sum);
-      setReadTime(sum);
-    } else {
-      localStorage.setItem("readTime", time);
-      setReadTime(time);
-    }
-  };
   return (
     <div>
       <div className="header m-auto mb-3">
         <Header></Header>
       </div>
       <div className="main row">
-        <div className="home-container col-md-8">
-          <Home handleReadTime={handleReadTime}></Home>
+        <div className="home-container">
+          <Home></Home>
           <Blog></Blog>
         </div>
-        <div className="sideCart col-md-4 col-sm-12 card">
-          <SideCart readTime={readTime}></SideCart>
-
+        <div className="">
           <ToastContainer></ToastContainer>
         </div>
       </div>
