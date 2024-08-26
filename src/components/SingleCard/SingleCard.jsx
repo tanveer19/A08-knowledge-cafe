@@ -4,12 +4,12 @@ const SingleCard = ({ blog, handleReadTime, handleAddToBookmarks }) => {
   //   console.log(blog);
   return (
     <div className="blog-card card">
-      <img className="mb-3" src={blog.img} alt="" />
+      <img className="mb-3 rounded" src={blog.img} alt="" />
       <div className="d-flex justify-content-between">
         {/* author, title, btn*/}
 
         <div className="d-flex flex-column align-items-start col-9">
-          <img src={blog.authorImage} alt="" />
+          <img className="rounded-circle" src={blog.authorImage} alt="" />
           <h4> Mr. {blog.authorName}</h4>
           <h2 className="">{blog.blogTitle}</h2>
           <p>#beginners #programming</p>

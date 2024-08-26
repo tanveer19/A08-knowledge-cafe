@@ -13,7 +13,7 @@ const SideCart = ({ readTime }) => {
     toast("Toasted!!!");
   };
   return (
-    <div>
+    <div className="bg-primary-subtle p-2 text-center mb-3 rounded">
       <p>Spent time on read:{time} </p>
       {/* <button onClick={handleComplete} className="btn btn-info">
         Toast me
