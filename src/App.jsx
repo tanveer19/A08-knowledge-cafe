@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./App.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import SideCart from "./components/SideCart/SideCart";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import Blog from "./components/Blog/Blog";
 
 function App() {
@@ -32,6 +32,7 @@ function App() {
         </div>
         <div className="sideCart col-md-4 col-sm-12 card">
           <SideCart readTime={readTime}></SideCart>
+
           <ToastContainer></ToastContainer>
         </div>
       </div>
