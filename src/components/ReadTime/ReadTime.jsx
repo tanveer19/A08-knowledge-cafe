@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 
-const SideCart = ({ readTime }) => {
+const ReadTime = ({ readTime }) => {
   const [time, setTime] = useState(readTime);
 
   useEffect(() => {
@@ -22,4 +22,4 @@ const SideCart = ({ readTime }) => {
   );
 };
 
-export default SideCart;
+export default ReadTime;

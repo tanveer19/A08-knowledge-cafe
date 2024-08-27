@@ -1,11 +1,9 @@
-import { useState } from "react";
 import "./App.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Header from "./components/Header/Header";
-import Home from "./components/Home/Home";
-import SideCart from "./components/SideCart/SideCart";
-import Blog from "./components/Blog/Blog";
+import Blogs from "./components/Blogs/Blogs";
+import Text from "./components/Text/Text";
 
 function App() {
   return (
@@ -13,10 +11,10 @@ function App() {
       <div className="header m-auto mb-3">
         <Header></Header>
       </div>
-      <div className="main row">
-        <div className="home-container">
-          <Home></Home>
-          <Blog></Blog>
+      <div className="row">
+        <div className="">
+          <Blogs></Blogs>
+          <Text></Text>
         </div>
         <div className="">
           <ToastContainer></ToastContainer>

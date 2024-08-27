@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import SingleCard from "../SingleCard/SingleCard";
+import Blog from "../Blog/Blog";
 import { addToLS, getStoredBookmarks } from "../../utilities/localstorage";
 import Bookmark from "../Bookmark/Bookmark";
-import SideCart from "../SideCart/SideCart";
+import ReadTime from "../ReadTime/ReadTime";
 
-const Home = ({}) => {
+const Blogs = ({}) => {
   const [blogs, setBlogs] = useState([]);
   const [bookmarks, setBookmarks] = useState([]);
 
@@ -60,21 +60,21 @@ const Home = ({}) => {
       {/* blog section */}
       <div className="col-md-8">
         {blogs.map((blog) => (
-          <SingleCard
+          <Blog
             key={blog.id}
             handleReadTime={handleReadTime}
             handleAddToBookmarks={handleAddToBookmarks}
             blog={blog}
-          ></SingleCard>
+          ></Blog>
         ))}
       </div>
       {/* side panel */}
       <div className="col-md-4">
-        <SideCart readTime={readTime}></SideCart>
+        <ReadTime readTime={readTime}></ReadTime>
         <Bookmark bookmarks={bookmarks}></Bookmark>
       </div>
     </div>
   );
 };
 
-export default Home;
+export default Blogs;
