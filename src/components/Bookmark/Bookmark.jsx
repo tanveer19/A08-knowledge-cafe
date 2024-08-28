@@ -3,7 +3,7 @@ import React from "react";
 const Bookmark = ({ bookmarks }) => {
   // console.log(bookmarks);
   return (
-    <div className="bg-secondary-subtle rounded p-3">
+    <div className="bg-secondary-subtle rounded p-3 sticky-top">
       <h5>Bookmarked Blogs:{bookmarks.length}</h5>
       <div className="">
         {bookmarks.map((bookmark, idx) => (

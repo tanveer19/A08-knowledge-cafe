@@ -1,6 +1,6 @@
 [
   {
-    "id": "11",
+    "id": "1",
     "authorName": "alpha",
     "blogTitle": "How to get your first job as a self-taught programmer",
     "readTime": 5,
@@ -9,27 +9,27 @@
     "hashtags": ["beginners", "es6"]
   },
   {
-    "id": "12",
+    "id": "2",
     "authorName": "beta",
-    "blogTitle": "How to get your first job as a self-taught programmer",
+    "blogTitle": "Breaking into the Industry as a Self-Taught Programmer",
     "readTime": 10,
     "authorImage": "https://picsum.photos/id/2/80",
     "img": "https://picsum.photos/id/2/845/450",
     "hashtags": ["javascript", "coding", "dev"]
   },
   {
-    "id": "13",
+    "id": "3",
     "authorName": "omega",
-    "blogTitle": "How to get your first job as a self-taught programmer",
+    "blogTitle": "From Code to Career: A Self-Taught Programmer's Journey",
     "readTime": 15,
     "authorImage": "https://picsum.photos/id/3/80",
     "img": "https://picsum.photos/id/3/845/450",
     "hashtags": ["beginners", "es6"]
   },
   {
-    "id": "14",
+    "id": "4",
     "authorName": "epsilon",
-    "blogTitle": "How to get your first job as a self-taught programmer",
+    "blogTitle": "self-taught-programming-for-beginners",
     "readTime": 20,
     "authorImage": "https://picsum.photos/id/4/80",
     "img": "https://picsum.photos/id/4/845/450",

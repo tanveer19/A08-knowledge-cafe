@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { addToLS, getStoredBookmarks } from "../../utilities/localstorage";
+import {
+  addToLS,
+  getStoredBookmarks,
+  removeFromLS,
+} from "../../utilities/localstorage";
 import Blog from "../Blog/Blog";
 import Bookmark from "../Bookmark/Bookmark";
 import ReadTime from "../ReadTime/ReadTime";
@@ -43,7 +47,7 @@ const Blogs = ({}) => {
   };
 
   // readtime
-  const handleReadTime = (time) => {
+  const handleReadTime = (id, time) => {
     const previousReadTime = JSON.parse(localStorage.getItem("readTime"));
     if (previousReadTime) {
       const sum = previousReadTime + time;
@@ -53,6 +57,15 @@ const Blogs = ({}) => {
       localStorage.setItem("readTime", time);
       setReadTime(time);
     }
+    // remove the read blog from front end
+    const remainingBookmarks = bookmarks.filter(
+      (bookmark) => bookmark.id !== id
+    );
+    setBookmarks(remainingBookmarks);
+
+    // remove from LS
+
+    removeFromLS(id);
   };
 
   return (
