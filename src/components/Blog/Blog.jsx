@@ -37,7 +37,7 @@ const Blog = ({ blog, handleReadTime, handleAddToBookmarks }) => {
               onClick={() => handleAddToBookmarks(blog)}
               className="border border-0 bg-white"
             >
-              <FaRegBookmark style={{}} />
+              <FaRegBookmark />
             </button>
           </div>
         </div>

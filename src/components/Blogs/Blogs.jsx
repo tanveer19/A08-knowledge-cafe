@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Blog from "../Blog/Blog";
 import { addToLS, getStoredBookmarks } from "../../utilities/localstorage";
+import Blog from "../Blog/Blog";
 import Bookmark from "../Bookmark/Bookmark";
 import ReadTime from "../ReadTime/ReadTime";
 
 const Blogs = ({}) => {
   const [blogs, setBlogs] = useState([]);
   const [bookmarks, setBookmarks] = useState([]);
+  const [readTime, setReadTime] = useState(0);
 
   useEffect(() => {
     fetch("blogs.json")
@@ -42,7 +43,6 @@ const Blogs = ({}) => {
   };
 
   // readtime
-  const [readTime, setReadTime] = useState("");
   const handleReadTime = (time) => {
     const previousReadTime = JSON.parse(localStorage.getItem("readTime"));
     if (previousReadTime) {
