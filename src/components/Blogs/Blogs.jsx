@@ -41,9 +41,13 @@ const Blogs = ({}) => {
   }, [blogs]);
 
   const handleAddToBookmarks = (blog) => {
-    const newBookmark = [...bookmarks, blog];
-    setBookmarks(newBookmark);
-    addToLS(blog.id);
+    const isExists = bookmarks.find((b) => b.id == blog.id);
+    if (!isExists) {
+      setBookmarks([...bookmarks, blog]);
+      addToLS(blog.id);
+    } else {
+      alert("Already Bookmarked!");
+    }
   };
 
   // readtime
